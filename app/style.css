@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* GLOBAL */
+html, body, .stApp {
+    background-color: #0e1117;
+    color: #f5f6fa;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.4s ease-in-out;
+}
+
+
+/* HEADINGS */
+h1, h2, h3, h4 {
+    color: #58a6ff;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* MULTISELECT & INPUTS */
+.stMultiSelect > div > div {
+    background-color: #1c1f26;
+    border-radius: 8px;
+    padding: 6px;
+    box-shadow: inset 0 0 0 1px #2c2f36;
+}
+.stMultiSelect label {
+    font-weight: 600;
+    color: #b0b6c3;
+}
+
+/* BUTTONS */
+div.stButton > button {
+    background: linear-gradient(145deg, #2ea043, #238636);
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px 24px;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 14px rgba(46, 160, 67, 0.3);
+}
+
+div.stButton > button:hover {
+    background: linear-gradient(145deg, #34d058, #2ea043);
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(52, 208, 88, 0.3);
+    color: white !important;   
+}
+/* Fix red text on click */
+div.stButton > button:focus:not(:hover) {
+    color: white !important;
+    background: linear-gradient(145deg, #2ea043, #238636) !important;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(52, 208, 88, 0.5);
+}
+
+
+/* CARD BLOCKS */
+.block {
+    background-color: #161a21;
+    padding: 22px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    animation: fadeIn 0.8s ease;
+    box-shadow: 0 0 18px rgba(88, 166, 255, 0.08);
+}
+
+/* FADE-IN ANIMATION */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* INFO / WARNING MESSAGES */
+.css-1cpxqw2 {
+    background-color: #1f2933 !important;
+    color: #d1d5db !important;
+    border-left: 4px solid #58a6ff !important;
+}
+
+/* HIDE STREAMLIT FOOTER */
+footer { visibility: hidden; }
